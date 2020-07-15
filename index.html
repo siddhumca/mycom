@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invoice Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <div class="banner">
+          <h1>Invoice Form</h1>
+        </div>
+        <div class="datepick">
+          <p>Invoice Date</p>
+          <input type="date" name="bdate" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <p>Customer Name</p>
+          <div class="city-item">
+            <input type="text" name="name" placeholder="Customer Name" />
+            <input type="text" name="model" placeholder="Mobile Model" />
+          </div>
+        </div>
+        <div class="item">
+          <p>Complaint :</p>
+          <textarea rows="2"></textarea>
+        </div>
+        <div class="item">
+          <p>Contact Number</p>
+          <input type="text" id="txtChar" onkeypress="return isNumberKey(event)" name="txtChar" maxlength="10"/>
+        </div>
+        <div class="item">
+          <p>Email</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item">
+          <p>Address</p>
+          <div class="city-item">
+            <input type="text" name="name" placeholder="Town" />
+          </div>
+        </div>
+        <div class="question">
+          <p>Taken from Customer</p>
+          <div class="container">
+            <ul class="ks-cboxtags">
+              <li><input type="checkbox" id="checkboxOne" value="Battery" checked><label for="checkboxOne">Battery</label></li>
+              <li><input type="checkbox" id="checkboxTwo" value="Back Door" checked><label for="checkboxThree">Back Door</label></li>
+              <li><input type="checkbox" id="checkboxThree" value="sim/memory"><label for="checkboxFour">Sim / Memory</label></li>
+              <li><input type="checkbox" id="checkboxFour" value="Charger"><label for="checkboxTwo">Charger</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">Save</button>
+        </div>
+      </form>
+      </html>
+    </div>
+  </body>
